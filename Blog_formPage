@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="github_try1.css"> -->     
+
+    <title>Component</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:white;
+        }
+        nav{
+            width:100%;
+            background:orange ;
+            overflow:auto;
+
+        }
+        ul{
+            padding:0;
+            margin:0 0 0 150px;
+            list-style:none;
+        }
+        li{
+            float:left;
+        }
+        .logo img{
+            position:absolute;
+            margin-top:15px;
+            margin-left:10px;
+        }
+        nav a{
+            width:100px;
+            display:block;
+            padding:20px 15px;
+            text-decoration:none;
+            font-family:Arial;
+            color:blueviolet;
+            text-align:center;
+
+        }
+        nav a:hover{
+            background:purple;
+            transition:0 8s;
+            text-transform:uppercase;
+        }
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .body{
+            width:100vh;
+            height:100vh;
+            background-color:#FAE16E;
+            display:felx;
+            justify-content:center;
+            align-items:center;
+        }
+        .mb-4{
+
+
+        }
+    </style>
+    <style>
+        h2{
+        position: absolute;
+        width: 300px;
+        height: 30px;
+        left: 89px;
+        top: 31px;
+
+        font-family: 'Gilroy-Bold';
+        font-size: 18.7544px;
+        line-height: 5px;
+
+        color: #444BAB;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <a herf="https://renaissance.programmingpathshala.com/crack-coding-interviews"></a>
+        <image src="C:\Users\DELL\Desktop\Pathsala\BlogPage\logo1.jpg" width="70px height=70px"></image>
+    </div>
+    <h2>Programming Pathasala </h2>
+
+    <nav>
+        <ul>
+            <li> <a href="#">Programming Pathasala</a> </li>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Renaissance </a> </li>
+            <li> <a href="#">Computer Program</a> </li>
+            <li> <a href="#">Hired With Us</a> </li>
+            <li> <a href="#">Stories</a> </li>
+            <li> <a href="#">Event</a> </li>
+            <li> <a href="#">Login/SignUp</a> </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="container bg-light px-5 py-5">
+        <div class="row-md-12">
+            <div class="py-2"><h3>Add Blog</h3></div>
+            <div class="mb-4">
+                <label class="fw-bold"  for="Blog title">Blog Title</label>
+                <input type="text" 
+                       class="form-control" 
+                       placeholder="Write your blog title here" 
+                       aria-label=""
+                       class="textbox">
+            </div>
+
+            <div class="mb-4">
+                <label class="fw-bold"  for="Author Name">Author Name</label><input type="text" class="form-control"
+                    placeholder="Write Author Name" aria-label="">
+            </div>
+
+            <div class="mb-4">
+                <label class="fw-bold"  for="Description" class="form-label">Description</label>
+                <textarea class="form-control" placeholder="Blog Desctription" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+
+            <div class="mb-4 ">
+                <h5>Add Attachments</h5>
+                <input type="file" name="uploadfile" id="img" style="display:none;" />
+                <label for="img" class="p-2 bg-light border border-3 rounded-1 border-dark">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 340 340"
+                        style="enable-background:new 0 0 340 340; width: 100px; height: 100px;" xml:space="preserve">
+                        <g id="XMLID_874_">
+                            <g id="XMLID_879_">
+                                <rect id="XMLID_179_" y="15" style="fill:#DAE4F4;" width="340" height="310" />
+                                <rect id="XMLID_883_" x="170" y="15" style="fill:#C6D6EA;" width="170" height="310" />
+                            </g>
+                            <circle id="XMLID_884_" style="fill:#FAE16E;" cx="231.341" cy="89.576" r="38.061" />
+                            <g id="XMLID_885_">
+                                <polygon id="XMLID_886_" style="fill:#2FA1DB;"
+                                    points="155.219,288.485 233.435,178.385 311.651,288.485 		" />
+                                <g id="XMLID_887_">
+                                    <polygon id="XMLID_888_" style="fill:#45B7EF;"
+                                        points="28.349,288.485 131.939,114.95 235.529,288.485 			" />
+                                    <polygon id="XMLID_889_" style="fill:#2FA1DB;"
+                                        points="170,178.71 170,288.485 235.529,288.485 			" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </label>
+            </div>
+            <div class="mb-4">
+                <div class="row g-2">
+                    <div class="col-md">
+                        <label class="fw-bold"  for="Author Name">Date</label>
+                        <input type="date" class="form-control" aria-label="">
+                    </div>
+                    <div class="col-md">
+                        <label class="fw-bold"  for="Author Name">Read Time</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Time</option>
+                            <option value="1">10 mins</option>
+                            <option value="2">15 mins</option>
+                            <option value="3">20 mins</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="fw-bold" for="Add tag">Add Tag</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Tag</option>
+                    <option value="1">Interview Preparation</option>
+                    <option value="2">Coding</option>
+                    <option value="3">Tech</option>
+                </select>
+            </div>
+            <div class="d-flex justify-content-end"><button type="button" class="btn btn-primary">Publish</button></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
